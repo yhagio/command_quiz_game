@@ -3,21 +3,21 @@
 ### How to run
 
 ```bash
-git clone 
-cd quiz_game
+git clone git@github.com:yhagio/command_quiz_game.git quiz
+cd quiz
 
 go build .
-./quiz_game
+./quiz
 ```
 
 Customize quiz
 ```bash
 # HELP menu
-./quiz_game -h
+./quiz -h
 
 # Use your own csv file
-go build . && ./quiz_game -csv "your_custom_questions.csv" 
+go build . && ./quiz -csv "your_custom_questions.csv" 
 
 # Change default timer to 5 seconds
-go build . && ./quiz_game -limit=5
+go build . && ./quiz -limit=5
 ```
